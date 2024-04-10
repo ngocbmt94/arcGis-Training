@@ -36,6 +36,7 @@ const TableDMA = (props) => {
   }, [paginationInternal.pageIndex, paginationInternal.pageSize]);
 
   function handleZoom(data) {
+    console.log("data");
     dispatch(appActions.widgetStatePropChange(eSelectedItem.storeKey, eSelectedItem.sectionKey, data));
   }
   return (

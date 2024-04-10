@@ -107,27 +107,6 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
     });
   }
 
-  // function _getFeatureLayerDataSource(dataSourceId: string) {
-  //   return DataSourceManager.getInstance().getDataSource(dataSourceId) as FeatureLayerDataSource | undefined;
-  // }
-
-  // async function queryPipeOfDMA(geometry: IPolygon) {
-  //   const pipeDs = _getFeatureLayerDataSource(props.useDataSources?.[1]?.dataSourceId);
-  //   if (!pipeDs)
-  //     return {
-  //       records: [],
-  //       fields: [],
-  //     };
-  //   const { records, fields } = await pipeDs.query({
-  //     where: `BUOCVAN is not null`,
-  //     outFields: ["OBJECTID", "BUOCVAN"],
-  //     geometryType: "esriGeometryPolygon",
-  //     geometry,
-  //     returnGeometry: true,
-  //   });
-  //   return { records, fields, dataSource: pipeDs };
-  // }
-
   async function accessMapSample() {
     // Dùng React dev tool để lấy mapWidgetId của map widget
     // Hoặc nếu dùng dataSource được chọn cùng nguồn với map widget thì có thể lấy mapWidgetId từ store mapWidgetInfo
