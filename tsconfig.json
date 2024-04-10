@@ -1,0 +1,38 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "skipLibCheck": true,
+    "lib": ["dom", "es6", "scripthost", "es2015", "es2020.Promise"],
+    "jsx": "react",
+    "noEmitHelpers": false,
+    "noUnusedLocals": false,
+    "allowUnreachableCode": true,
+    "allowJs": true,
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "calcite-components": ["jimu-ui/calcite-components/index"],
+      "esri/*": ["./node_modules/@arcgis/core/*"],
+      "widgets/*": ["./your-extensions/widgets/*"],
+      "lodash": ["your-extensions/node_plugin/node_modules/@types/lodash"],
+      "date-fns": ["your-extensions/node_plugin/node_modules/date-fns"],
+      "axios": ["your-extensions/node_plugin/node_modules/axios"],
+      "@mui/material": ["your-extensions/node_plugin/node_modules/@mui/material"],
+      "@mui/icons-material": ["your-extensions/node_plugin/node_modules/@mui/icons-material"],
+      "@mui/x-date-pickers": ["your-extensions/node_plugin/node_modules/@mui/x-date-pickers"],
+      "helper": ["your-extensions/widgets/common/helper"],
+      "material-react-table": ["your-extensions/node_plugin/node_modules/material-react-table"],
+      "report-constants": ["your-extensions/widgets/common/report-constants"],
+      "react-hook-form": ["your-extensions/node_plugin/node_modules/react-hook-form"],
+      "styled-components": ["your-extensions/node_plugin/node_modules/styled-components"]
+    }
+  },
+  "include": ["dist/widgets", "your-extensions", "types", "jimu-core/lib/types"],
+  "exclude": ["node_modules", "arcgis-js-api", "**/*.js"]
+}
